@@ -4,7 +4,7 @@ This file uses change log convention from [Keep a CHANGELOG](http://keepachangel
 
 ## [Unreleased]
 
-[unreleased]: https://github.com/hadenlabs/cookiecutter-docker/compare/0.0.1...HEAD
+[Unreleased]: https://github.com/hadenlabs/cookiecutter-docker/compare/0.0.1...HEAD
 [0.0.1]: https://github.com/hadenlabs/cookiecutter-docker/compare/0.0.0...0.0.1
 
 [CHANGELOG.md]: CHANGELOG.md
