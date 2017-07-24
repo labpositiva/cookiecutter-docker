@@ -4,9 +4,9 @@ Cookiecutter docker
 |Build Status| |GitHub issues| |GitHub license|
 
 :Version: 0.0.1
-:Web: https://github.com/hadenlabs/cookiecutter-docker
-:Download: https://github.com/hadenlabs/cookiecutter-docker
-:Source: https://github.com/hadenlabs/cookiecutter-docker
+:Web: https://github.com/labpositiva/cookiecutter-docker
+:Download: https://github.com/labpositiva/cookiecutter-docker
+:Source: https://github.com/labpositiva/cookiecutter-docker
 :Keywords: Cookiecutter
 
 Cookiecutter recipe to easily create docker project.
@@ -33,7 +33,7 @@ Usage
 
 .. code:: bash
 
-        cookiecutter https://github.com/hadenlabs/cookiecutter-docker.git
+        cookiecutter https://github.com/labpositiva/cookiecutter-docker.git
 
 This will generate this folders (Please note the absence of templates
 folder):
@@ -53,13 +53,13 @@ Credits
 -------
 
 Made with :heart: :coffee: and :pizza: by
-`hadenlabs <https://github.com/hadenlabs>`__.
+`labpositiva <https://github.com/labpositiva>`__.
 
 -  `All Contributors <AUTHORS>`__
 
-.. |Build Status| image:: https://travis-ci.org/hadenlabs/cookiecutter-docker.svg
-   :target: https://travis-ci.org/hadenlabs/cookiecutter-docker
-.. |GitHub issues| image:: https://img.shields.io/github/issues/hadenlabs/cookiecutter-docker.svg
-   :target: https://github.com/hadenlabs/cookiecutter-docker/issues
+.. |Build Status| image:: https://travis-ci.org/labpositiva/cookiecutter-docker.svg
+   :target: https://travis-ci.org/labpositiva/cookiecutter-docker
+.. |GitHub issues| image:: https://img.shields.io/github/issues/labpositiva/cookiecutter-docker.svg
+   :target: https://github.com/labpositiva/cookiecutter-docker/issues
 .. |GitHub license| image:: https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square
    :target: LICENSE
