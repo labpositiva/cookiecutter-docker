@@ -15,7 +15,7 @@ replace = """
 
 [[files."CHANGELOG.rst"]]
 search = """
-[Unreleased]: https://github.com/labpositiva/cookiecutter-docker/compare/{{old_version}}...HEAD
+.. _`Unreleased`: https://github.com/labpositiva/cookiecutter-docker/compare/{{old_version}}...HEAD
 """
 replace = """
 .. _`Unreleased`: https://github.com/labpositiva/cookiecutter-docker/compare/{{new_version}}...HEAD
