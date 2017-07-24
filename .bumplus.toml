@@ -1,6 +1,6 @@
 version = '0.0.1'
 
-[[files."CHANGELOG.md"]]
+[[files."CHANGELOG.rst"]]
 search = """
 ## [Unreleased]
 """
@@ -10,7 +10,7 @@ replace = """
 ## [{{new_version}}] - {{utcnow | strftime('%Y-%m-%d')}}
 """
 
-[[files."CHANGELOG.md"]]
+[[files."CHANGELOG.rst"]]
 search = """
 [Unreleased]: https://github.com/hadenlabs/cookiecutter-docker/compare/{{old_version}}...HEAD
 """
