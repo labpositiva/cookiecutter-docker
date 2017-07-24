@@ -3,7 +3,7 @@ Cookiecutter docker
 
 |Build Status| |GitHub issues| |GitHub license|
 
-:Version: 0.0.1
+:Version: 0.0.2
 :Web: https://github.com/labpositiva/cookiecutter-docker
 :Download: https://github.com/labpositiva/cookiecutter-docker
 :Source: https://github.com/labpositiva/cookiecutter-docker
