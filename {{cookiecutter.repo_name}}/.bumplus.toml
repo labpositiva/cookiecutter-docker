@@ -1,21 +1,25 @@
 version = '{{cookiecutter.version}}'
 
-[[files."CHANGELOG.md"]]
+[[files."CHANGELOG.rst"]]
 search = """
-## [Unreleased]
+`Unreleased`_
+*************
 """
-replace = """
-## [Unreleased]
 
 {% raw %}
-## [{{new_version}}] - {{utcnow | strftime('%Y-%m-%d')}}
+replace = """
+`Unreleased`_
+*************
+
+`{{new_version}}`_ - {{utcnow | strftime('%Y-%m-%d')}}
+********************
 """
 {% endraw %}
-[[files."CHANGELOG.md"]]
+[[files."CHANGELOG.rst"]]
 search = """
-[Unreleased]: https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.repo_name}}/compare/{{ "{{" }}old_version{{ "}}" }}...HEAD
+.. _`Unreleased`: https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.repo_name}}/compare/{{ "{{" }}old_version{{ "}}" }}...HEAD
 """
 replace = """
-[Unreleased]: https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.repo_name}}/compare/{{ "{{" }}new_version{{ "}}" }}...HEAD
-[{{ "{{" }}new_version{{ "}}" }}]: https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.repo_name}}/compare/{{ "{{" }}old_version{{ "}}" }}...{{ "{{" }}new_version{{ "}}" }}
+.. _`Unreleased`: https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.repo_name}}/compare/{{ "{{" }}new_version{{ "}}" }}...HEAD
+.. _`{{ "{{" }}new_version{{ "}}" }}`: https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.repo_name}}/compare/{{ "{{" }}old_version{{ "}}" }}...{{ "{{" }}new_version{{ "}}" }}
 """
