@@ -3,7 +3,16 @@ Cookiecutter docker
 
 |Build Status| |GitHub issues| |GitHub license|
 
+:Version: 0.0.1
+:Web: https://github.com/hadenlabs/cookiecutter-docker
+:Download: https://github.com/hadenlabs/cookiecutter-docker
+:Source: https://github.com/hadenlabs/cookiecutter-docker
+:Keywords: Cookiecutter
+
 Cookiecutter recipe to easily create docker project.
+
+.. contents:: Table of Contents:
+    :local:
 
 Features
 --------
@@ -15,10 +24,9 @@ Features
 Requirements
 ------------
 
--  Linux
--  none
--  OSX
--  none
+.. code-block:: bash
+
+   $ make setup
 
 Usage
 -----
