@@ -2,12 +2,15 @@ version = '0.0.1'
 
 [[files."CHANGELOG.rst"]]
 search = """
-## [Unreleased]
+`Unreleased`_
+*************
 """
 replace = """
-## [Unreleased]
+`Unreleased`_
+*************
 
-## [{{new_version}}] - {{utcnow | strftime('%Y-%m-%d')}}
+`{{new_version}}]`_ - {{utcnow | strftime('%Y-%m-%d')}}
+*************************************
 """
 
 [[files."CHANGELOG.rst"]]
@@ -15,6 +18,6 @@ search = """
 [Unreleased]: https://github.com/labpositiva/cookiecutter-docker/compare/{{old_version}}...HEAD
 """
 replace = """
-[Unreleased]: https://github.com/labpositiva/cookiecutter-docker/compare/{{new_version}}...HEAD
-[{{new_version}}]: https://github.com/labpositiva/cookiecutter-docker/compare/{{old_version}}...{{new_version}}
+.. _`Unreleased`: https://github.com/labpositiva/cookiecutter-docker/compare/{{new_version}}...HEAD
+.. _`{{new_version}}`: https://github.com/labpositiva/cookiecutter-docker/compare/{{old_version}}...{{new_version}}
 """
