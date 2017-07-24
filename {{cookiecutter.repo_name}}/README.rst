@@ -1,7 +1,7 @@
 {{cookiecutter.project_name}}
 ==============================
 
-{{cookiecutter.short.description}}
+{{cookiecutter.short_description}}
 
 |Code Climate| |GitHub issues| |GitHub forks| |GitHub stars| |Issue Count| |license| |Test Coverage|
 
