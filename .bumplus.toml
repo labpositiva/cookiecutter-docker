@@ -9,8 +9,8 @@ replace = """
 `Unreleased`_
 *************
 
-`{{new_version}}]`_ - {{utcnow | strftime('%Y-%m-%d')}}
-*************************************
+`{{new_version}}`_ - {{utcnow | strftime('%Y-%m-%d')}}
+*******************************
 """
 
 [[files."CHANGELOG.rst"]]
