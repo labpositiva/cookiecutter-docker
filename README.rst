@@ -3,7 +3,7 @@ Cookiecutter docker
 
 |Build Status| |GitHub issues| |GitHub license|
 
-Cookiecutter recipe to easily create golang project.
+Cookiecutter recipe to easily create docker project.
 
 Features
 --------
