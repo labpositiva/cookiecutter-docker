@@ -3,7 +3,11 @@
 
 {{cookiecutter.short_description}}
 
-|Code Climate| |GitHub issues| |GitHub forks| |GitHub stars| |Issue Count| |license| |Test Coverage|
+|Build Status| |Docker Stars| |Docker Pulls| |Code Climate| |GitHub stars| |Issue Count| |license| |Test Coverage|
+
+Download size of this image is only:
+
+|MicroBadger|
 
 Requirements
 ------------
@@ -40,3 +44,13 @@ Made with :heart: :coffee: and :pizza: by `{{cookiecutter.company}} <https://git
    :target: LICENSE
 .. |Test Coverage| image:: https://codeclimate.com/github/{{cookiecutter.github_user}}/{{cookiecutter.repo_name}}/badges/coverage.svg
    :target: https://codeclimate.com/github/{{cookiecutter.github_user}}/{{cookiecutter.repo_name}}/coverage
+
+.. |MicroBadger| image:: https://images.microbadger.com/badges/image/{{cookiecutter.github_user}}/{{cookiecutter.repo_name}}.svg
+   :target: http://microbadger.com/images/{{cookiecutter.github_user}}/{{cookiecutter.repo_name}}
+.. |Docker Stars| image:: https://img.shields.io/docker/stars/{{cookiecutter.github_user}}/{{cookiecutter.repo_name}}.svg?style=flat-square
+   :target: https://hub.docker.com/r/{{cookiecutter.github_user}}/{{cookiecutter.repo_name}}
+.. |Docker Pulls| image:: https://img.shields.io/docker/pulls/{{cookiecutter.github_user}}/{{cookiecutter.repo_name}}.svg?style=flat-square
+   :target: https://hub.docker.com/r/{{cookiecutter.github_user}}/{{cookiecutter.repo_name}}
+
+.. |Build Status| image:: https://travis-ci.org/{{cookiecutter.github_user}}/{{cookiecutter.repo_name}}.svg
+   :target: https://travis-ci.org/{{cookiecutter.github_user}}/{{cookiecutter.repo_name}}
