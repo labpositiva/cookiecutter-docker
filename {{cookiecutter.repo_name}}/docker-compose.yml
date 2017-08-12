@@ -4,7 +4,17 @@
 # Usage: docker-compose up
 version: '3'
 services:
-  docker:
+
+  app:
+    hostname: app
+    ports:
+      - "80:5000"
     restart: always
-    build: .
     image: python:3.6.1
+    build:
+      context: .
+      dockerfile: docker/app/Dockerfile
+    volumes:
+      - .:/usr/src/
+    env_file:
+      - .env

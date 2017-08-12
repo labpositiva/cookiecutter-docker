@@ -5,12 +5,51 @@
 
 |Build Status| |Docker Stars| |Docker Pulls| |Code Climate| |GitHub stars| |Issue Count| |license| |Test Coverage|
 
+:Version: {{cookiecutter.version}}
+:Web: https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.repo_name}}
+:Download: https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.repo_name}}
+:Source: https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.repo_name}}
+:Keywords: {{cookiecutter.project_name}}
+
 Download size of this image is only:
 
 |MicroBadger|
 
+.. contents:: Table of Contents:
+    :local:
+
 Requirements
 ------------
+
+.. code-block:: bash
+
+  make setup
+
+Actions Makefile
+----------------
+
+.. code-block:: bash
+
+  λ make
+    \{^_^}/ Commands
+      build                Build docker container by env
+      clean                clean Files compiled
+      documentation        Make Documentation
+      down                 remove containers docker by env
+      environment          Make environment for developer
+      env                  Show envs available
+      install              Install with var env Dependences
+      list                 List of current active services by env
+      lint                 Clean files unnecesary
+      test                 make test
+      up                   Up application by env
+      restart              Reload services
+      ssh                  Connect to container
+      stop                 stop containers docker by env
+      setup                Install dependences initial
+      verify_network       Verify network
+      help                 Show help text
+
 
 Changelog
 ---------

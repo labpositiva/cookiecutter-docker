@@ -4,4 +4,4 @@
 # shellcheck source=/dev/null
 [ -r "script/bootstrap.sh" ] && source "script/bootstrap.sh"
 
-pip install -r requirements/setup.txt
+pip install -r "${REQUIREMENTS_DIR}/"setup.txt
