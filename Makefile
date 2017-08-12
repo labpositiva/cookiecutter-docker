@@ -1,13 +1,13 @@
 .PHONY: build deploy lint test functions help
 .DEFAULT_GOAL := help
 
-DOCKER_NETWORK = cookiecutter_docker_network
-PROYECT_NAME = cookiecutter_docker
+DOCKER_NETWORK = cookiecutter-docker_network
+PROYECT_NAME = cookiecutter-docker
 
 # Configuration.
 SHELL = /bin/bash
 ROOT_DIR = $(shell pwd)
-MESSAGE="\{^_^}/"
+MESSAGE="༼ つ ◕_◕ ༽つ"
 SCRIPT_DIR = $(ROOT_DIR)/script
 
 # Bin scripts

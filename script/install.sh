@@ -5,13 +5,13 @@
 [ -r "script/bootstrap.sh" ] && source "script/bootstrap.sh"
 
 if [ "$1" == "" ]; then
-    npm install --verbose
+    pip install -r requirements.txt
 elif [ "$1" == "dev" ]; then
-    npm install --verbose
+    pip install -r "${REQUIREMENTS_DIR}/"dev.txt
 elif [ "$1" == "stage" ]; then
-    npm install --verbose
+    pip install -r "${REQUIREMENTS_DIR}/"stage.txt
 elif [ "$1" == "test" ]; then
-    npm install --verbose
+    pip install -r "${REQUIREMENTS_DIR}/"test.txt
 elif [ "$1" == "prod" ]; then
-    npm install --verbose
+    pip install -r requirements.txt
 fi
