@@ -1,5 +1,4 @@
-box: python:3.6.0
-
+box: python:3.6.1
 dev:
   steps:
     - script:
@@ -9,8 +8,7 @@ dev:
           sudo apt-get install -y shellcheck
     - script:
         name: install dependences
-        code: make setup
-
+        code: make install env=dev
 # Build definition
 build:
   # The steps that will be executed on build
@@ -19,26 +17,19 @@ build:
     - add-ssh-key:
         keyname: GITHUB_KEY
         host: github.com
-
     - add-to-known_hosts:
         hostname: github.com
         fingerprint: 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48
 
     - script:
-        name: Install shellcheck
+        name: install shellcheck
         code: |
           sudo apt-get update
           sudo apt-get install -y shellcheck
-
     - script:
-        name: Install dependences
+        name: install dependences
         code: |
-          make setup
-
-    - script:
-        name: Lint Code
-        code: |
-          make lint
+          make install env=dev
 
   after-steps:
     - install-packages:
@@ -51,23 +42,21 @@ build:
 
     - wantedly/pretty-slack-notify:
         webhook_url: $SLACK_WEBHOOK_URL
-        channel: notify-ci
-        username: willybot
+        channel: $SLACK_CHANNEL
+        username: $SLACK_USERNAME
+        passed_message: "yay :smile:"
 
 # Testing definition
 test:
-
-  box:
-    id: mhart/alpine-node:6.10.0
-    cmd: /bin/sh
-
   steps:
 
-    - script:
-        name: Install bash
-        code: |
-          apk add --update alpine-sdk
-          apk add --update bash
+    - add-ssh-key:
+        keyname: GITHUB_KEY
+        host: github.com
+
+    - add-to-known_hosts:
+        hostname: github.com
+        fingerprint: 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48
 
     - script:
       name: Show vars env
@@ -75,16 +64,35 @@ test:
           env
 
     - script:
+        name: install shellcheck
+        code: |
+          sudo apt-get update
+          sudo apt-get install -y shellcheck
+
+    - script:
         name: install dependences
         code: |
           make install env=test
 
     - script:
-        name: Run Test
+        name: Run lint code
+        code: |
+          make lint
+
+    - script:
+        name: "Set environment variables"
+        code: |
+          export MY_VAR=you are happy
+
+    - script:
+        name: Run tests
         code: |
           make test
 
   after-steps:
+    - install-packages:
+        packages: ruby
+
     - script:
         name: Show vars env
         code: |
@@ -92,5 +100,6 @@ test:
 
     - wantedly/pretty-slack-notify:
         webhook_url: $SLACK_WEBHOOK_URL
-        channel: notify-ci
-        username: willybot
+        channel: $SLACK_CHANNEL
+        username: $SLACK_USERNAME
+        passed_message: "yay :smile:"
