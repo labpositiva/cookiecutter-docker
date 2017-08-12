@@ -33,7 +33,7 @@ Usage
 
 .. code:: bash
 
-        cookiecutter https://github.com/labpositiva/cookiecutter-docker.git
+  cookiecutter https://github.com/labpositiva/cookiecutter-docker.git
 
 This will generate this folders (Please note the absence of templates
 folder):
