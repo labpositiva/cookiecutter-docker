@@ -3,7 +3,7 @@ Cookiecutter docker
 
 |Build Status| |GitHub issues| |GitHub license|
 
-:Version: 0.0.3
+:Version: 0.0.4
 :Web: https://github.com/labpositiva/cookiecutter-docker
 :Download: https://github.com/labpositiva/cookiecutter-docker
 :Source: https://github.com/labpositiva/cookiecutter-docker
@@ -33,7 +33,7 @@ Usage
 
 .. code:: bash
 
-        cookiecutter https://github.com/labpositiva/cookiecutter-docker.git
+  cookiecutter https://github.com/labpositiva/cookiecutter-docker.git
 
 This will generate this folders (Please note the absence of templates
 folder):

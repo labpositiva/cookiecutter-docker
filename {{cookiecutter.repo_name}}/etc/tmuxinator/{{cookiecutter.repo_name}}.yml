@@ -32,9 +32,8 @@ windows:
   - editor:
       layout: even-horizontal
       panes:
-        - editor:
+        - shell:
             - pyenv activate {{cookiecutter.repo_name}}
-            - <%= ENV["EDITOR"] %>
         - vagrant:
             - pyenv activate {{cookiecutter.repo_name}}
         - docker:

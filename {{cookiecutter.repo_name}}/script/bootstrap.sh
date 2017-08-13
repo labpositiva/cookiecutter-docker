@@ -15,7 +15,7 @@ ROOT_DIR=$(pwd)
 export RESOURCES_DIR="$ROOT_DIR/resources"
 export RESOURCES_DB_DIR="$RESOURCES_DIR/db"
 export PROVISION_DIR="$ROOT_DIR/provision/ansible"
-export SOURCE_DIR="${ROOT_DIR}/src/"
+export SOURCE_DIR="${ROOT_DIR}/"
 export REQUIREMENTS_DIR="${ROOT_DIR}/requirements/"
 export FILE_README="${ROOT_DIR}/README.rst"
 
