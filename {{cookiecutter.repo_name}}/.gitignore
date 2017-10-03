@@ -1,3 +1,4 @@
+.env
 # Static and media development files.
 media/
 src/assets/
@@ -103,3 +104,13 @@ provision/ansible/roles/contrib
 dumps
 *.retry
 ;
+.terraform
+.backup
+*.backup
+*.tfstate
+terraform.tfstate.d
+*.out
+*.log
+*.aux
+*.pdf
+*.zip

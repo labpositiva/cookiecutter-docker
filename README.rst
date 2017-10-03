@@ -28,6 +28,35 @@ Requirements
 
    $ make setup
 
+Actions Makefile
+----------------
+
+.. code-block:: bash
+
+  λ make
+      ༼ つ ◕_◕ ༽つ Makefile for Cookiecutter docker
+
+      Usage:
+          make environment               create environment with pyenv
+          make install                   install dependences python by env
+          make clean                     remove files of build
+          make setup                     install requirements
+
+          Docker:
+
+              make docker.build         build all services with docker-compose
+              make docker.down          down services docker-compose
+              make docker.ssh           connect by ssh to container
+              make docker.stop          stop services by env
+              make docker.verify_network           verify network
+              make docker.up             up services of docker-compose
+              make docker.list           list services of docker
+
+          Tests:
+
+              test.lint                  Run all pre-commit
+              test.syntax                Run all syntax in code
+
 Usage
 -----
 
