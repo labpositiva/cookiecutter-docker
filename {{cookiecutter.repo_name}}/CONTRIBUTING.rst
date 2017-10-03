@@ -1,5 +1,5 @@
 How to contribute
-=================
+#################
 
 Prerequisites:
 
@@ -7,8 +7,8 @@ Prerequisites:
    requests <https://help.github.com/articles/using-pull-requests>`__
    and `issues <https://guides.github.com/features/issues/>`__.
 -  Knowledge of
-   `Markdown <https://help.github.com/articles/markdown-basics/>`__ for
-   editing ``.md`` documents.
+   `ReST <http://docutils.sourceforge.net/docs/user/rst/quickref.html>`__ for
+   editing ``.rst`` documents.
 
 In particular, this community seeks the following types of
 contributions:
@@ -29,12 +29,12 @@ contributions:
    formatting.
 
 Conduct
-=======
+*******
 
 Communication
-=============
+*************
 
 Frequently Asked Questions
-==========================
+**************************
 
 *please add*
