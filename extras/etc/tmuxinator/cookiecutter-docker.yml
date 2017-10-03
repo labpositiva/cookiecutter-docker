@@ -1,6 +1,6 @@
-# ~/.tmuxinator/{{cookiecutter.repo_name}}.yml
-name: {{cookiecutter.repo_name}}
-root: <%= ENV["PROJECTS"] %>/docker/{{cookiecutter.repo_name}}
+# ~/.tmuxinator/cookiecutter-docker.yml
+name: cookiecutter-docker
+root: <%= ENV["PROJECTS"] %>/python/cookiecutter-docker
 tmux_options: -2
 # Optional tmux socket
 # socket_name: foo
@@ -26,35 +26,34 @@ pre:
 # attach: false
 
 # Runs after everything. Use it to attach to tmux with custom options etc.
-# post: tmux -CC attach -t {{cookiecutter.repo_name}}
+# post: tmux -CC attach -t cookiecutter-docker
 
 windows:
   - editor:
       layout: even-horizontal
       panes:
-        - shell:
-            - pyenv activate {{cookiecutter.repo_name}}
-        - vagrant:
-            - pyenv activate {{cookiecutter.repo_name}}
-        - docker:
-            - pyenv activate {{cookiecutter.repo_name}}
+        - editor:
+            - pyenv activate cookiecutter-docker
+        - pwd:
+            - pyenv activate cookiecutter-docker
+        - pwd:
+            - pyenv activate cookiecutter-docker
   - python:
       layout: main-vertical
       panes:
         - python:
-            - pyenv activate {{cookiecutter.repo_name}}
-            - ipython
+            - pyenv activate cookiecutter-docker
   - databases:
       layout: main-vertical
       panes:
-        - postgresql:
-            - pyenv activate {{cookiecutter.repo_name}}
-        - mysql:
-            - pyenv activate {{cookiecutter.repo_name}}
+        - ls:
+            - pyenv activate cookiecutter-docker
+        - ls:
+            - pyenv activate cookiecutter-docker
   - docker:
       layout: main-vertical
       panes:
-        - code:
-            - pyenv activate {{cookiecutter.repo_name}}
-        - vagrant:
-            - pyenv activate {{cookiecutter.repo_name}}
+        - ls:
+            - pyenv activate cookiecutter-docker
+        - ls:
+            - pyenv activate cookiecutter-docker
