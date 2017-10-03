@@ -7,7 +7,7 @@ PROYECT_NAME = {{cookiecutter.repo_name}}
 # Configuration.
 SHELL = /bin/bash
 ROOT_DIR = $(shell pwd)
-MESSAGE="\{^_^}/"
+MESSAGE="༼ つ ◕_◕ ༽つ"
 SCRIPT_DIR = $(ROOT_DIR)/script
 
 # Bin scripts
